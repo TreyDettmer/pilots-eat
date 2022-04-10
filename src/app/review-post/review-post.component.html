@@ -1,0 +1,21 @@
+<div class = "container">
+    <div class = "image-container">
+        <app-slideshow-image></app-slideshow-image>
+    </div>
+    <div class="info-container">
+        <p class="title">{{post.title}}</p>
+        <div class="author-info-container">
+            <p class="author">Author: {{post.author}}</p>
+            <p class="date">{{post.date}}</p>
+        </div>
+        <p class="address" *ngIf="post.address">Address: {{post.address}}</p>
+        <p class="store" *ngIf="post.store">Store: {{post.store}}</p>
+        <p class="description">{{post.description}}</p>
+        <div class="buttons-container">
+            <button class="vote-button" (click)="incrementUpVotes()"><i class="fa fa-thumbs-up"></i> {{post.upvotes}}</button>
+            <button class="vote-button"  (click)="incrementDownVotes()"><i class="fa fa-thumbs-down"></i>{{post.downvotes}}</button>
+        </div>
+    </div>
+    
+
+</div>

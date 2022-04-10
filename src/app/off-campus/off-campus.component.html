@@ -1,0 +1,24 @@
+<div class = "page-header">
+  <h1>
+      Pilots Eat 
+  </h1>
+  <p>The all-in-one resource for University of Portland student hunger</p>
+
+</div>
+
+<app-navbar activeNavLink="off-campus"></app-navbar>
+
+<body>
+<div class="page-content">
+  <ng-container *ngFor="let reviewPost of reviewPosts; let i = index;">
+    <app-review-post [post]="reviewPost"></app-review-post>
+  </ng-container>        
+</div>
+<app-submission-form [hasLocation]="true" [isStore]="false"></app-submission-form>
+</body>
+
+<footer class="bg-light text-center text-lg-start">
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2022 Copyright
+</div>
+</footer>

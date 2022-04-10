@@ -1,0 +1,54 @@
+
+
+.page-header {
+    text-align: center;
+    background-color: var(--uppurple) !important;
+    padding-bottom: .5em;
+}
+
+.page-header > h1 {
+    font-size: 4em;
+    color: white
+}
+
+.page-header > p {
+    color: white;
+}
+
+.navbar{
+    text-align:center;
+    padding: 0px 0px;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right:0;
+}
+
+img {
+    float: left;
+    height: 100%;
+    padding: .6em;
+}
+
+
+
+.page-content {
+    margin: 0 1em;
+}
+
+
+body {
+    width: 100%;
+    text-align: center;
+    display: inline-block;   
+}
+
+body p {
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.nav-item {
+    font-size: 1.3em;
+}

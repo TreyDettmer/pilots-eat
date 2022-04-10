@@ -1,0 +1,37 @@
+<div class="container">
+    <h2 class="header">Create a review!</h2>
+    <form [formGroup]="submissionForm" (ngSubmit)="onSubmit()" id="submissionForm" class="submission-form">
+
+        <div class="inputs-container">
+            <label for="fname" class="subject-label">Meal Name:</label>
+            <input type="text" class="subject-input" name="subject" formControlName="subject" value="">
+    
+            <label for="fname" class="email-label">UP email:</label>
+            <input type="text" class="email-input" name="email" formControlName="email" value="">
+
+            <ng-container *ngIf="hasLocation">
+                <label for="fname" class="location-label">Location:</label>
+                <ng-container *ngIf="hasLocation && isStore">
+                    <select class="location-input" name="location"  formControlName="location" value="">
+                        <option value="macks">macks</option>
+                        <option value="fredmeyer">fred meyer</option>
+                        <option value="target">target</option>
+                        <option value="other">other</option>
+                    </select>
+                </ng-container>
+                <ng-container *ngIf="hasLocation && !isStore">
+                    <input type="text" class="location-input" name="location" formControlName="email" value="">
+                </ng-container>
+
+            </ng-container>
+
+
+    
+            <label for="review" class="review-label">Review:</label>
+            <textarea rows="3" cols="30" name="review" formControlName="review" form="submissionForm" class="review-input">Enter text here...</textarea>
+        </div>
+
+        <input class="submit-input" type="submit" value="Submit">        
+    </form> 
+    
+</div>
