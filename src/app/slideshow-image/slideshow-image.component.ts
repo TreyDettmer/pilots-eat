@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, isDevMode, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-slideshow-image',
@@ -13,6 +13,7 @@ export class SlideshowImageComponent implements OnInit {
   @ViewChild('image2') image2? : any;
   showingImage1 : boolean = true;
 
+  devMode :boolean = isDevMode();
   ngOnInit(): void {
   }
 
