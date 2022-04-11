@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  devMode : boolean = isDevMode();
   ngOnInit(): void {
   }
 

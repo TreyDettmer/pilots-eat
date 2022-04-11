@@ -13,7 +13,6 @@ export class SlideshowImageComponent implements OnInit {
   @ViewChild('image2') image2? : any;
   showingImage1 : boolean = true;
 
-  devMode :boolean = isDevMode();
   ngOnInit(): void {
   }
 
