@@ -13,10 +13,10 @@
                 <label for="fname" class="location-label">Location:</label>
                 <ng-container *ngIf="hasLocation && isStore">
                     <select class="location-input" name="location"  formControlName="location" value="">
-                        <option value="macks">macks</option>
-                        <option value="fredmeyer">fred meyer</option>
-                        <option value="target">target</option>
-                        <option value="other">other</option>
+                        <option value="macks">Macks</option>
+                        <option value="fredmeyer">Fred Meyer</option>
+                        <option value="target">Target</option>
+                        <option value="other">Other</option>
                     </select>
                 </ng-container>
                 <ng-container *ngIf="hasLocation && !isStore">
@@ -29,6 +29,9 @@
     
             <label for="review" class="review-label">Review:</label>
             <textarea rows="3" cols="30" name="review" formControlName="review" form="submissionForm" class="review-input">Enter text here...</textarea>
+        
+            <label for="image-input" class="image-input-label">Add Image(s):</label>
+            <input type="file" name="image-input" formControlName="image_input" class="image-input" multiple>
         </div>
 
         <input class="submit-input" type="submit" value="Submit">        

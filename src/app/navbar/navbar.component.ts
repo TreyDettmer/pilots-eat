@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +9,11 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  isExpanded : boolean = false;
   @Input() activeNavLink:string = "home";
   ngOnInit(): void {
   }
+
+  
 
 }

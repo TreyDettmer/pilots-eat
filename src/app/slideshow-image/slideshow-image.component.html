@@ -1,5 +1,5 @@
 <div class="image-container"  (click)="nextSlide()">
-    <img #image1 class="image" width="200" height="200" src = './assets/img/up_p_logo_purple.png'   alt="image">
-    <img #image2 class="image" width="200" height="200" style="display: none;" src= './assets/img/up_wheel_logo.png'   alt="image">
+    <img #image1 class="image" width="200" height="200" [src]="img_paths ? img_paths[0] : './assets/img/no_image.png'"   alt="image">
+    <img #image2 class="image" width="200" height="200" style="display: none;" [src]="img_paths && img_paths.length > 1 ? img_paths[1] : './assets/img/no_image.png'"   alt="image">
 </div>
 

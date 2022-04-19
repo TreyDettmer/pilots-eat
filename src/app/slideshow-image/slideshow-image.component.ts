@@ -1,4 +1,4 @@
-import { Component, isDevMode, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, isDevMode, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-slideshow-image',
@@ -12,6 +12,7 @@ export class SlideshowImageComponent implements OnInit {
   @ViewChild('image1') image1? : any;
   @ViewChild('image2') image2? : any;
   showingImage1 : boolean = true;
+  @Input() img_paths?:Array<string> = [];
 
   ngOnInit(): void {
   }
@@ -23,7 +24,7 @@ export class SlideshowImageComponent implements OnInit {
       if (this.image2)
       {
         this.image1.nativeElement.style.display = "none";
-        this.image2.nativeElement.style.display = "block";
+        this.image2.nativeElement.style.display = "inline-block";
         this.showingImage1 = false;
       }
       
@@ -33,7 +34,7 @@ export class SlideshowImageComponent implements OnInit {
       if (this.image1)
       {
         this.image2.nativeElement.style.display = "none";
-        this.image1.nativeElement.style.display = "block";
+        this.image1.nativeElement.style.display = "inline-block";
         this.showingImage1 = true;
       }
     }

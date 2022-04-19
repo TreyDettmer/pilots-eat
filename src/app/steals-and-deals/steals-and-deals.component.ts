@@ -25,7 +25,7 @@ export class StealsAndDealsComponent implements OnInit {
         title : "Title",
         author : "Author",
         date : "date",
-        store : "macks",
+        store : "Macks",
         description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas vestibulum risus sed facilisis. Nulla facilisi. Cras non enim aliquet, aliquam massa vitae, hendrerit neque. Vestibulum et nibh nisi. Ut a ornare metus. Donec at odio congue, bibendum erat vel, tempor diam. Vestibulum ut est odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
         upvotes : 0,
         downvotes : 0,

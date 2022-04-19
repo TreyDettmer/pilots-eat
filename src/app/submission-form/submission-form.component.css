@@ -5,8 +5,8 @@
 
 .inputs-container {
     display: grid;
-    grid-template-rows: 30px 30px auto auto;
-    grid-template-columns: 100px 150px;
+    grid-template-rows: 30px 30px auto auto auto;
+    grid-template-columns: 120px 170px;
     justify-content: center;
     grid-row-gap: 10px;
 }

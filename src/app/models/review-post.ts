@@ -7,4 +7,5 @@ export interface ReviewPost {
     description : string,
     upvotes: number,
     downvotes: number,
+    img_paths?: Array<string>
 }

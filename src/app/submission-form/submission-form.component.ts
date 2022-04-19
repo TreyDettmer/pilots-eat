@@ -13,7 +13,8 @@ export class SubmissionFormComponent implements OnInit {
     subject: '',
     email: '',
     location: '',
-    review: ''
+    review: '',
+    image_input: ''
   });
   constructor(private formBuilder : FormBuilder) {}
 

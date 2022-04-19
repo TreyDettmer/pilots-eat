@@ -18,6 +18,7 @@ export class ReviewPostComponent implements OnInit {
     description : "description",
     upvotes : 0,
     downvotes : 0,
+    img_paths : ["./assets/img/up_p_logo_purple.png"]
   };
 
   upvoted : boolean = false;
