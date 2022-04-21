@@ -16,6 +16,11 @@ export class OffCampusComponent implements OnInit {
     this.initializeReviews();
   }
 
+  sortReviews()
+  {
+    this.reviewPosts.sort((a,b) => (a.upvotes/((a.downvotes == 0) ? 1 : a.downvotes) >  b.upvotes/((b.downvotes == 0) ? 1 : b.downvotes)) ? -1 : 1);
+  }
+
   initializeReviews()
   {
     //hard coded reviews
@@ -73,6 +78,8 @@ export class OffCampusComponent implements OnInit {
       downvotes : 0,
       img_paths : ["./assets/img/review-images/john_street_cafe_toast.jpg"]
     });
+
+    this.sortReviews();
 
   }
   

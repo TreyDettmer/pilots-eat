@@ -52,3 +52,20 @@ body p {
 .nav-item {
     font-size: 1.3em;
 }
+
+a:link {
+    text-decoration: none; 
+    color: var(--uppurple);
+}
+
+
+a:visited { text-decoration: none; 
+   color: var(--uppurple);}
+
+
+a:hover { text-decoration: none; 
+   color: var(--uppurple);}
+
+
+a:active { text-decoration: none; 
+   color: var(--uppurple);}

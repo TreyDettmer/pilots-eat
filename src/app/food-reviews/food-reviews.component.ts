@@ -16,20 +16,65 @@ export class FoodReviewsComponent implements OnInit {
     this.initializeReviews();
   }
 
+  sortReviews()
+  {
+    this.reviewPosts.sort((a,b) => (a.upvotes/((a.downvotes == 0) ? 1 : a.downvotes) >  b.upvotes/((b.downvotes == 0) ? 1 : b.downvotes)) ? -1 : 1);
+  }
+
   initializeReviews()
   {
-    for (let i = 0; i < 4; i++)
-    {
-      this.reviewPosts.push({
-        title : "Title",
-        author : "Author",
-        date : "date",
-        description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas vestibulum risus sed facilisis. Nulla facilisi. Cras non enim aliquet, aliquam massa vitae, hendrerit neque. Vestibulum et nibh nisi. Ut a ornare metus. Donec at odio congue, bibendum erat vel, tempor diam. Vestibulum ut est odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
-        upvotes : 0,
-        downvotes : 0,
-        
-      });
-    }
+    //hard coded reviews
+    this.reviewPosts.push({
+      title : "Meal 1",
+      author : "dettmer23@up.edu",
+      date : "4/21/2022",
+      description : "Best salad ever!",
+      upvotes : 10,
+      downvotes : 0,
+      img_paths : ["./assets/img/review-images/fire_on_the_mountain_salad.jpg"]
+    });
+
+    this.reviewPosts.push({
+      title : "Meal 2",
+      author : "dettmer23@up.edu",
+      date : "4/21/2022",
+      description : "Great coffee shop atmosphere with friendly workers and unique Portland decor!",
+      upvotes : 11,
+      downvotes : 0,
+      img_paths : ["./assets/img/review-images/cathedral_coffee_coffee.jpg"]
+    });
+
+    this.reviewPosts.push({
+      title : "Meal 3",
+      author : "dettmer23@up.edu",
+      date : "4/21/2022",
+      description : "Gyoza!",
+      upvotes : 12,
+      downvotes : 0,
+      img_paths : ["./assets/img/review-images/dehomis.jpg","./assets/img/review-images/dehomis2.jpg"]
+    });
+
+    this.reviewPosts.push({
+      title : "Meal 4",
+      author : "dettmer23@up.edu",
+      date : "4/21/2022",
+      description : "Pasta!",
+      upvotes : 10,
+      downvotes : 0,
+      img_paths : ["./assets/img/review-images/pastini_pasta.jpg"]
+    });
+
+    this.reviewPosts.push({
+      title : "Meal 5",
+      author : "dettmer23@up.edu",
+      date : "4/21/2022",
+      description : "French Toast!",
+      upvotes : 10,
+      downvotes : 0,
+      img_paths : ["./assets/img/review-images/john_street_cafe_toast.jpg"]
+    });
+
+    this.sortReviews();
   }
 
 }

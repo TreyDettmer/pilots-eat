@@ -60,6 +60,7 @@ export class SubmissionFormComponent implements OnInit {
     
     
     console.log(this.submissionForm.value);
+    alert("Post submitted for review!")
     this.submissionForm.reset();
   }
 
