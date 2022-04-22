@@ -11,7 +11,7 @@ I created this website because I thought about how much college students love fo
 ## Development
 The major reason why I chose to build a website for my professional development activity was because I wanted to familiarize myself with AngularJS web framework which I will be using during my internship this summer. Angular is a component based framework which I took advantage of for the review posts on the website. Each post is it's own component with properties (title, author, date, location, description, upvotes, downvotes). Using this component workflow made making changes to the website a lot easier. This is also the first website that I have hosted on Github pages. This was a fairly easy task to accomplish and I will definitely continue using Github pages in the future. Another important feature of this website is its mobile layout. I had to make sure that the navigation bar and the posts displayed in a way that was easy to understand and scroll through.
 
-Because of the smaller scope of this project, the website is currently not functional in the sense that posts cannot be added and upvotes/downvotes are not saved. This would require a database and more backend work which I didn't want to dive into. 
+Because of the smaller scope of this project, the website is currently not functional in the sense that posts cannot be added and upvotes/downvotes are not saved. This would require a database and more backend work which I didn't want to dive into. Also, because I used high resolution JPG pictures from an iPhone for the pictures on the Food Reviews and Steals & Deals pages, they will likely load slowly.
 
 This project helped me grow my knowledge of AngularJS and has made me more confident looking towards my internship this summer.
 
