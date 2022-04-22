@@ -25,53 +25,53 @@ export class FoodReviewsComponent implements OnInit {
   {
     //hard coded reviews
     this.reviewPosts.push({
-      title : "Meal 1",
+      title : "Grilled Fish Tostadas",
       author : "dettmer23@up.edu",
       date : "4/21/2022",
-      description : "Best salad ever!",
+      description : "Very good!",
       upvotes : 10,
       downvotes : 0,
-      img_paths : ["./assets/img/review-images/fire_on_the_mountain_salad.jpg"]
+      img_paths : ["./assets/img/review-images/grilled_fish_tostadas.JPG"]
     });
 
     this.reviewPosts.push({
-      title : "Meal 2",
+      title : "Chorizo Breakfast Plate",
       author : "dettmer23@up.edu",
       date : "4/21/2022",
-      description : "Great coffee shop atmosphere with friendly workers and unique Portland decor!",
+      description : "I would rate this 7/10",
       upvotes : 11,
       downvotes : 0,
-      img_paths : ["./assets/img/review-images/cathedral_coffee_coffee.jpg"]
+      img_paths : ["./assets/img/review-images/chorizo_breakfast_plate.JPG"]
     });
 
     this.reviewPosts.push({
-      title : "Meal 3",
+      title : "Shepard's Pie",
       author : "dettmer23@up.edu",
       date : "4/21/2022",
-      description : "Gyoza!",
+      description : "Very hearty and delicious!",
       upvotes : 12,
       downvotes : 0,
-      img_paths : ["./assets/img/review-images/dehomis.jpg","./assets/img/review-images/dehomis2.jpg"]
+      img_paths : ["./assets/img/review-images/shepards_pie.JPG"]
     });
 
     this.reviewPosts.push({
-      title : "Meal 4",
+      title : "Turkey Chorizo Chilaquiles",
       author : "dettmer23@up.edu",
       date : "4/21/2022",
-      description : "Pasta!",
+      description : "I would rate this 7/10",
       upvotes : 10,
       downvotes : 0,
-      img_paths : ["./assets/img/review-images/pastini_pasta.jpg"]
+      img_paths : ["./assets/img/review-images/turkey_chorizo_chilaquiles.JPG"]
     });
 
     this.reviewPosts.push({
-      title : "Meal 5",
+      title : "Fish and Chips",
       author : "dettmer23@up.edu",
       date : "4/21/2022",
-      description : "French Toast!",
+      description : "Hit the spot! 9/10 rating",
       upvotes : 10,
       downvotes : 0,
-      img_paths : ["./assets/img/review-images/john_street_cafe_toast.jpg"]
+      img_paths : ["./assets/img/review-images/fish_and_chips.JPG"]
     });
 
     this.sortReviews();
